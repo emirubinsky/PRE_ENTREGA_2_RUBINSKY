@@ -34,13 +34,6 @@ header {
     line-height: 90px;
 }
 
-ul li {
-    display: inline-block;
-    padding: 0px 20px;
-    align-items: flex-end;
-
-}
-
 a {
     color: white;
     text-decoration: none;
@@ -48,13 +41,6 @@ a {
 
 .img {
     display: inline-block
-}
-
-.welcome-title {
-    text-align: center;
-    margin: 20px;
-    color: #557f7d;
-    font-size: 300%;
 }
 
 .propiedades {
@@ -93,33 +79,16 @@ a {
     display: inline-block;
 }
 
-.parrafo2 {
-    padding: 20px;
-    border: black solid 3px;
-    width: 400px;
-    margin: 10px;
-    height: 300px;
-    overflow: auto;
-}
-
-.parrafo3 {
-    padding: 20px;
-    border: black solid 3px;
-    width: 400px;
-    margin: 10px;
-    height: 300px;
-    overflow: auto;
-}
 
 
-.footer {
+/*.footer {
     background-color: black;
     color: #fefefe;
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
-}
+}*/
 
 .barra {
     background-color: #557f7d;
@@ -182,4 +151,69 @@ a {
 
 .centrado3{
     margin-left: 100px;
+}
+
+/* ESTILOS DEL HEADER */
+
+/*
+*
+*/
+.home_titulo {
+    text-align: center;
+    margin: 20px;
+    color: #557f7d;
+    font-size: 300%;
+}
+
+.logo_organica{
+    width: 50px;
+    margin: 6px;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #557f7d;
+    color: #fefefe;
+  }
+  
+  
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+  
+  body > .container {
+    padding: 60px 15px 0;
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  code {
+    font-size: 80%;
+  }
+
+
+  /** ESTILOS DEL FOOTER **/
+
+.footer_texto{
+    text-align: center;
+    color: white;
 }
