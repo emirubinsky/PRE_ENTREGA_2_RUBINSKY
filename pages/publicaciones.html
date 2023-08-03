@@ -4,87 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publicaciones</title>
+    <!--Link a Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Home</title>
     <!-- Estilos 👇 -->
     <link rel="stylesheet" href="../css/styles.css">
-
     <!---- Font Raleway -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <!---- Fin de la carga de fuentes -->
+     <!---- Fin de la carga de fuentes -->
 
+    <!-- Carga de archivos JavaScript necesarios para algunas cosas (Ej: Carrousel)-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header id="head">
-        <nav>
-            <div class="navegador_logo">
-                <a href="../index.html"><img src="../Img/logo.jpeg" alt="logo de la compañía" class="logo"></a>
+    <header>
+        <div class="row">
+            <!--Navbar-->
+            <div class="col-md-1">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo_crop.png" alt="logo" class="logo_organica"></a>
             </div>
-            <div class="navegador_botones">
-                <ul>
-                    <li>
-                        <a href="../index.html">Home</a>
+            <div class="col-md-11">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/estudio.html">Estudio</a>
                     </li>
-                    <li>
-                        <a href="estudio.html">Estudio</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
                     </li>
-                    <li>
-                        <a href="proyectos.html">Proyectos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/publicaciones.html">Publicaciones</a>
                     </li>
-                    <li>
-                        <a href="publicaciones.html">Publicaciones</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
-        </nav>
+        </div>
+
+
     </header>
 
-    <main>
-            <article class="centrado1">
-                    <h1>PUBLICACIONES</h1>
-            </article>
+    <!-- Begin page content -->
+    <main role="main" class="container">
+
+        <article>
+            <h1 class="home_titulo">PUBLICACIONES</h1>
+        </article>
 
         <section>
-            <p class="parrafo2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum harum dolores maiores quas,
-                corrupti saepe consequatur eos, laudantium, voluptates enim commodi ducimus sed aliquid cumque ut
-                fugiat doloribus eius ipsam maxime! Veniam, minus eos. Provident, facilis libero debitis tempora neque
-                cum
-                nesciunt. Sunt, eum modi? Natus, tenetur recusandae iste amet dolore at, ducimus quis ullam ab nulla
-                fugiat nihil
-                praesentium. Reprehenderit nobis totam commodi excepturi blanditiis, nam laborum dignissimos consequatur
-                error,
-                iusto omnis! Rerum, magni eum nobis animi officia, explicabo qui maxime laborum quibusdam hic
-                praesentium tempora
-                neque deserunt ab repellendus mollitia amet aperiam iusto ducimus exercitationem numquam sunt.
-            </p>
-                <div class="centrado2">
-                    <h2>Revista Plot</h2>
-                </div>    
-           
-            <p class="parrafo3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quisquam nobis architecto maiores aliquid
-                reprehenderit, ipsam dolorum doloribus accusamus tenetur recusandae mollitia sit asperiores sunt nam
-                nesciunt culpa veritatis ratione nostrum velit facere laboriosam? Facere enim culpa in voluptatum animi.
-            </p>
+            <div class="row">
+                <div class="col xs-6">
+                    <div class="">
+                        <h2>Revista Plot</h2>
+                    </div>
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum harum dolores maiores
+                        quas,
+                        corrupti saepe consequatur eos, laudantium, voluptates enim commodi ducimus sed aliquid cumque
+                        ut
+                        fugiat doloribus eius ipsam maxime! Veniam, minus eos. Provident, facilis libero debitis tempora
+                        neque
+                        cum
+                        nesciunt. Sunt, eum modi? Natus, tenetur recusandae iste amet dolore at, ducimus quis ullam ab
+                        nulla
+                        fugiat nihil
+                        praesentium. Reprehenderit nobis totam commodi excepturi blanditiis, nam laborum dignissimos
+                        consequatur
+                        error,
+                        iusto omnis! Rerum, magni eum nobis animi officia, explicabo qui maxime laborum quibusdam hic
+                        praesentium tempora
+                        neque deserunt ab repellendus mollitia amet aperiam iusto ducimus exercitationem numquam sunt.
+                    </p>
+                </div>
+            </div>
 
-                <div class="centrado3">
-                    <h2>Revista Summa+</h2>
-                </div>  
+            <div class="row">
+                <div class="col xs-6">
+                    <div class="">
+                        <h2>Revista Summa+</h2>
+                    </div>
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum harum dolores maiores
+                        quas,
+                        corrupti saepe consequatur eos, laudantium, voluptates enim commodi ducimus sed aliquid cumque
+                        ut
+                        fugiat doloribus eius ipsam maxime! Veniam, minus eos. Provident, facilis libero debitis tempora
+                        neque
+                        cum
+                        nesciunt. Sunt, eum modi? Natus, tenetur recusandae iste amet dolore at, ducimus quis ullam ab
+                        nulla
+                        fugiat nihil
+                        praesentium. Reprehenderit nobis totam commodi excepturi blanditiis, nam laborum dignissimos
+                        consequatur
+                        error,
+                        iusto omnis! Rerum, magni eum nobis animi officia, explicabo qui maxime laborum quibusdam hic
+                        praesentium tempora
+                        neque deserunt ab repellendus mollitia amet aperiam iusto ducimus exercitationem numquam sunt.
+                    </p>
+                </div>
+            </div>
         </section>
-
     </main>
 
     <footer class="footer">
-        <section class="barra">
-            <h2>2023 - Todos los Derechos Reservados</h2>
-        </section>
+        <div class="container footer_texto">
+            <span>2023 - Todos los Derechos Reservados</span>
+        </div>
     </footer>
+
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 
 </html>
