@@ -19,15 +19,12 @@
 
 <body>
     <header id="head">
-        <nav>
+        <nav class="navbar">
             <div class="navegador_logo">
-                <a href="../index.html"><img src="../Img/logo.jpeg" alt="logo de la compañía" class="logo"></a>
+                <a href="../index.html"><img src="../img/logo_crop.png" alt="logo de la compañía" class="logo"></a>
             </div>
-            <div class="navegador_botones">
-                <ul>
-                    <li>
-                        <a href="../index.html">Home</a>
-                    </li>
+            <div>
+                <ul class="navegador_botones">
                     <li>
                         <a href="estudio.html">Estudio</a>
                     </li>
@@ -46,38 +43,27 @@
     </header>
     <!-- Fin Header -->
 
-    <main>
-        <section class="formulario">
-            <h1>CONTACTANOS</h1>
-                <br>
-            <form action="">
-                <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name">
-                </div>
-                <br>
-                <div>
-                    <label for="surname">Apellido</label>
-                    <input type="text" surname="surname">
-                </div>
-                <br>
-                <div>
-                    <label for="email">Email*</label>
-                    <input type="email" required name="email" placeholder="juan@gmail.com">
-                </div>
-                <br>
-
-                <textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
-                <div>
-                    <input type="submit" value="Enviar datos">
-                    <input type="reset" value="Borrar datos">
-                </div>
-            </form>
-        </section>
+    <main role="main" >
+        <div class="css_grid_form_container">
+            <form action="" class="css_grid_form">
+                <label for="name">Nombre</label>
+                <input type="text" name="name">
+            
+                <label for="surname">Apellido</label>
+                <input type="text" surname="surname">
+            
+                <label for="email">Email*</label>
+                <input type="email" required name="email" placeholder="juan@gmail.com">
+            
+                <textarea name="comentarios" class="css_grid_form_text_area" >Escribe aquí tus comentarios</textarea>
+            
+                <input type="submit" value="Enviar datos" class="css_grid_form_buttons">
+        </form>
+        </div>
     </main>
     
-    <footer class="footer">
-        <section class="barra">
+    <footer class="footer_contacto">
+        <section class="barra_contacto">
             <h2>2023 - Todos los Derechos Reservados</h2>
         </section>
     </footer>
