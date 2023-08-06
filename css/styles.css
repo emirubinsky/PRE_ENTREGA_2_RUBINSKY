@@ -8,11 +8,13 @@
  
  body{
      margin: 0px;
- }
+
+}
  
  header {
      background: #557f7d;
      justify-content: space-between;
+    
  }
  .colorMenu{
      background-color: #557f7d;
@@ -108,7 +110,7 @@
  }
  .letra{
      font-size-adjust: 10px;
-     }
+}
  .estudio{
      text-align: center;
  
@@ -279,6 +281,7 @@
      margin: 0;
      padding: 0;
      
+     
    }
    
    .navegador_botones li {
@@ -339,8 +342,7 @@
      font-size: 10px;    
  }
  
-   /* Estilos para dispositivos móviles (ancho de pantalla menor o igual a 768px) */
-   @media only screen and (max-width: 768px) {
+   
      .navbar {
          display: flex;
          justify-content: space-between; /* Alinea los elementos a los extremos (izquierda y derecha) */
@@ -373,7 +375,7 @@
          margin-left: 0;
        }
        
-       .navegador_botones a {
+       .navegador_botones a{
          color: #fff;
          text-decoration: none;
        }
@@ -389,6 +391,7 @@
          grid-template-columns: 20% 50%;
          column-gap: 5px;
          row-gap: 15px;
+        
      }
      
      .css_grid_form_text_area{
@@ -404,6 +407,7 @@
          justify-content: flex-end!important;
      }
      
+    
      .footer_contacto{
          position: absolute;
          bottom: 0;
@@ -426,14 +430,13 @@
      }
  
      
-   }
-   
-   /* Estilos para tablets y dispositivos con pantallas medianas (ancho de pantalla entre 769px y 1024px) */
-   @media only screen and (min-width: 769px) and (max-width: 1024px) {
-     
-   }
-   
-   /* Estilos para dispositivos con pantallas grandes (ancho de pantalla mayor a 1024px) */
-   @media only screen and (min-width: 1025px) {
-     
-   }
+    /* Estilos para teléfonos móviles (ancho de pantalla menor o igual a 480px) */
+     @media only screen and (max-width: 480px) {
+        
+        .css_grid_form{
+        grid-template-columns: 1fr;
+        }
+        
+    
+}  
+  
