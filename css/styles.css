@@ -428,6 +428,9 @@
          margin-bottom: 0%
          
      }
+     .navegador_botones_link:hover{
+        color: #0a58ca;
+     }
  
      
     /* Estilos para teléfonos móviles (ancho de pantalla menor o igual a 480px) */
@@ -437,6 +440,6 @@
         grid-template-columns: 1fr;
         }
         
-    
+        
 }  
   
